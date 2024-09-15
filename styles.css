@@ -1,0 +1,99 @@
+/* Cài đặt kiểu chữ và loại bỏ khoảng cách mặc định */
+body {
+    font-family: Arial, sans-serif; /* Đặt kiểu chữ cho toàn bộ trang */
+    margin: 0; /* Loại bỏ khoảng cách ngoài của phần tử body */
+    padding: 0; /* Loại bỏ khoảng cách trong của phần tử body */
+}
+
+/* Cài đặt kiểu cho phần header */
+header {
+    background-color: #008f8f; /* Đặt màu nền của header thành xám đậm */
+    color: white; /* Đặt màu chữ trong header thành trắng */
+    padding: 10px; /* Thêm khoảng cách 10px ở trên và dưới nội dung của header */
+}
+
+/* Cài đặt kiểu cho danh sách menu trong nav */
+nav ul.menu {
+    list-style: none; /* Loại bỏ dấu chấm hoặc số mặc định của danh sách */
+    padding: 0; /* Loại bỏ khoảng cách trong của danh sách */
+    margin: 0; /* Loại bỏ khoảng cách ngoài của danh sách */
+    display: flex; /* Sử dụng Flexbox để sắp xếp các phần tử trong hàng ngang */
+    justify-content: center; /* Căn giữa các mục trong danh sách */
+}
+
+/* Cài đặt kiểu cho các mục trong danh sách menu */
+nav ul.menu li {
+    margin: 0 15px; /* Thêm khoảng cách 15px ở hai bên mỗi mục menu */
+}
+
+/* Cài đặt kiểu cho các liên kết trong menu */
+nav ul.menu li a {
+    color: white; /* Đặt màu chữ của liên kết thành trắng */
+    text-decoration: none; /* Loại bỏ gạch chân mặc định của liên kết */
+}
+
+/* Cài đặt kiểu cho vùng chứa chính */
+.container {
+    display: flex; /* Sử dụng Flexbox để sắp xếp các phần tử con */
+    margin-left: 250px;
+    margin-right: 200px;
+}
+
+/* Cài đặt kiểu cho phần bên trái */
+.left {
+    margin-top: 10px;
+    flex: 4; /* Đặt tỷ lệ chiều rộng của phần bên trái thành 1, chiếm không gian còn lại */
+    padding: 5px; /* Thêm khoảng cách 10px xung quanh nội dung trong phần bên trái */
+}
+
+/* Cài đặt kiểu cho phần bên phải */
+.right {
+    flex: 2; /* Đặt tỷ lệ chiều rộng của phần bên phải thành 2, chiếm không gian gấp đôi phần bên trái */
+    padding: 5px; /* Thêm khoảng cách 10px xung quanh nội dung trong phần bên phải */
+}
+
+/* Cài đặt kiểu cho các dòng trong phần bên phải */
+.line {
+    padding: 10px; /* Thêm khoảng cách 10px xung quanh nội dung trong mỗi dòng */
+    border-bottom: 1px solid rgb(204, 204, 204); /* Thêm đường gạch dưới màu xám với độ dày 1px */
+    margin-bottom: 10px; /* Thêm khoảng cách 10px giữa các dòng */
+}
+.line a {
+    text-decoration: none; /* Loại bỏ gạch chân của liên kết */
+    color: black; /* Đặt màu chữ của liên kết thành đen */
+    display: flex; /* Sử dụng Flexbox để sắp xếp ảnh và văn bản */
+    align-items: center; /* Căn giữa ảnh và văn bản theo chiều dọc */
+    font-size: 18px;
+}
+
+.line img {
+    max-width: 50px; /* Đặt kích thước tối đa cho ảnh để nó không quá lớn */
+    margin-right: 10px; /* Thêm khoảng cách giữa ảnh và văn bản */
+    border-radius: 5px; /* Bo tròn góc của ảnh */
+}
+.column {
+    display:block;
+    flex: 1; /* Mỗi cột có cùng kích thước */
+    background-color: #ffffff;
+    padding: 20px;
+}
+.column a{
+    text-decoration: none; /* Loại bỏ gạch chân của liên kết */
+
+}
+.column img{
+    max-width: 200px;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    margin: 8px 8px;
+}
+.column:first-child {
+    flex: 1;
+}
+.column:nth-child(2) {
+    flex: 2;
+}
+.column:last-child {
+    flex: 1;
+}
+
